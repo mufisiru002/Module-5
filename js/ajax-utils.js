@@ -55,6 +55,8 @@ function handleResponse(request,
     else {
       responseHandler(request.responseText);
     }
+  }else if(request.status != 200) {
+    alert (request.status);
   }
 }
 
